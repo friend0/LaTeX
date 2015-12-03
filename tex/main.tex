@@ -1,0 +1,34 @@
+\documentclass[Nomencl]{SelimArticle}
+\input{./options}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+\begin{document}
+\mytitlepage
+\tableofcontents
+\newpage
+\printnomenclature % Use makeidx.bat followed by two pdflatex reruns.
+\newpage
+% Begin writing here.
+
+\section{Motivation}
+Over the past several years, the application of infrared motion captures systems to the design and validation of control laws for a wide variety of problems. Although the server applications that accompany these systems include faculties for determining mean error based on a simple calibration step, it may often be the case that control engineers may want to verify their 'ground truth' based on more empirical evidence.
+
+The focus of my project was on the design of  a closed loop positioning platform to be used in characterization of motion capture system noise. This was done using aluminum extrusion coupled to stepper belt-drives, with the addition of closed loop control in the form of a 'flying-fader' a type of linear motorized potentiometer commonly used in audio control panel applications. 
+
+The components are pictured in figure REF and REF.
+
+\section{Analysis}
+Naturally, the design of this controller began with some mathematical analysis to specify the physical system to be controlled. In the case of the flying fader, the physical mechanism consists of a DC motor coupled to a belt with a pulley. The belt, stretched taught by pulley's on either end, one passive, one active, serves as an energy transfer mechanism to a small tab attached to the belt for positioning some object, typically a sliding knob. 
+
+The dynamics for the motor are given as follows:
+
+The dynamics of the belt/pulley system are given as follows:
+
+The system transfer function is given as follows:
+
+
+\section{Gallery}
+
+\bibliographystyle{IEEEtran}
+\bibliography{dabib}
+\end{document}
